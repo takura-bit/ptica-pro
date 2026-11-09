@@ -1,0 +1,1320 @@
+<meta charset="utf-8">
+<title>ПТИЦА.ПРО</title>
+<meta name="description" content="Оптовые поставки куриного сырья: тушка ЦБ, разделка, филе, субпродукты, ММО. Каталог, производство, качество, логистика.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<style>
+  .route[hidden]{display:none !important}
+  @media (prefers-reduced-motion:reduce){
+    .reveal{opacity:1 !important;transform:none !important}
+    *{animation-duration:.01ms !important;transition-duration:.01ms !important}
+  }
+</style>
+
+<div class="topbar">
+  <div class="container topbar__in">
+    <div><span class="topbar__dot"></span>Свободный объём на завтра: 42 т охлаждённого, 130 т замороженного</div>
+    <ul class="topbar__list">
+      <li><a href="#quality">Сертификаты и декларации</a></li>
+      <li><a href="#delivery">Условия поставки</a></li>
+      <li><a href="mailto:sales@ptica.pro">sales@ptica.pro</a></li>
+    </ul>
+  </div>
+</div>
+
+<header class="header">
+  <div class="container header__in">
+    <a class="logo" href="#home">
+      <span class="logo__mark">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M16 7h.01"/><path d="M3.4 18H12a8 8 0 0 0 8-8V7a4 4 0 0 0-7.28-2.3L2 20"/><path d="m20 7 2 .5-2 .5"/><path d="M10 18v3"/><path d="M14 17.75V21"/><path d="M7 18a6 6 0 0 0 3.84-10.61"/></svg>
+      </span>
+      <span><b>ПТИЦА</b><i>.ПРО</i></span>
+    </a>
+    <nav class="nav">
+      <a href="#catalog">Продукция</a>
+      <a href="#company">Компания</a>
+      <a href="#quality">Качество</a>
+      <a href="#delivery">Доставка и оплата</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <div class="header__side">
+      <a class="header__phone" href="tel:+74951234567">+7 (495) 123-45-67<small>Отдел продаж · 8:00–20:00 МСК</small></a>
+      <button class="cart-btn js-open-cart" type="button">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M9 15h6"/></svg>
+        <span class="cart-btn__t">Заявка</span>
+        <span class="cart-btn__count js-cart-count">0</span>
+      </button>
+      <button class="burger" id="burger" type="button" aria-label="Меню"><i></i><i></i><i></i></button>
+    </div>
+  </div>
+</header>
+
+<main>
+<div class="route" data-page="home">
+<!-- ================= ГЕРОЙ ================= -->
+<section class="hero">
+  <div class="container">
+    <div class="hero__grid">
+      <div>
+        <div class="eyebrow">Оптовые поставки мяса птицы с 2014 года</div>
+        <h1>Куриное сырьё оптом<br>— <em>напрямую с производства</em></h1>
+        <p class="hero__text">Тушка ЦБ, разделка, филе, субпродукты и ММО. Стабильный объём круглый год, фиксированная цена по контракту и отгрузка со склада в течение 24 часов.</p>
+        <div class="hero__badges">
+          <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 13 4 4L19 7"/></svg>Отгрузка от 1 тонны</span>
+          <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 13 4 4L19 7"/></svg>ГОСТ и ХАССП</span>
+          <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 13 4 4L19 7"/></svg>ВСД «Меркурий» и ЭДО</span>
+          <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 13 4 4L19 7"/></svg>Отсрочка до 21 дня</span>
+        </div>
+        <div class="btn-row">
+          <a class="btn btn--primary" href="#catalog">Смотреть каталог и цены</a>
+          <a class="btn btn--outline-light" href="#price">Получить прайс-лист</a>
+        </div>
+        <p class="hero__note">Работаем с переработчиками, дистрибьюторами, сетевым ритейлом и HoReCa по всей России и ЕАЭС.</p>
+      </div>
+
+      <div class="hero-card" id="price">
+        <h3>Прайс-лист за 5 минут</h3>
+        <p class="hero-card__sub">Оставьте контакты — менеджер пришлёт актуальный прайс и рассчитает цену под ваш объём.</p>
+        <form data-form="price">
+          <div class="field">
+            <label for="h-name">Имя и компания</label>
+            <input id="h-name" name="name" required placeholder="Иван, ООО «Мясной дом»">
+          </div>
+          <div class="field">
+            <label for="h-phone">Телефон</label>
+            <input id="h-phone" name="phone" type="tel" required placeholder="+7 (___) ___-__-__">
+          </div>
+          <div class="field">
+            <label for="h-vol">Планируемый объём в месяц</label>
+            <select id="h-vol" name="volume">
+              <option>до 5 тонн</option>
+              <option selected>5–20 тонн</option>
+              <option>20–100 тонн</option>
+              <option>более 100 тонн</option>
+            </select>
+          </div>
+          <button class="btn btn--primary btn--block" type="submit" data-label="Получить прайс-лист">Получить прайс-лист</button>
+          <div class="form-ok">Заявка принята. Менеджер свяжется с вами в течение 15 минут в рабочее время.</div>
+          <p class="form-note">Нажимая кнопку, вы соглашаетесь с <a href="#">политикой обработки персональных данных</a>.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="stats">
+    <div class="container">
+      <div class="stats__grid">
+        <div class="stats__item">
+          <div class="stats__num"><span data-count="14200">0</span> т</div>
+          <div class="stats__label">отгружено за 2025 год</div>
+        </div>
+        <div class="stats__item">
+          <div class="stats__num"><span data-count="320">0</span>+</div>
+          <div class="stats__label">постоянных оптовых клиентов</div>
+        </div>
+        <div class="stats__item">
+          <div class="stats__num"><span data-count="4">0</span> склада</div>
+          <div class="stats__label">Москва, Белгород, Казань, Екатеринбург</div>
+        </div>
+        <div class="stats__item">
+          <div class="stats__num"><span data-count="24">0</span> ч</div>
+          <div class="stats__label">от заявки до загрузки машины</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= КЛИЕНТЫ ================= -->
+<section class="section section--tight">
+  <div class="container">
+    <p class="small muted center" style="margin-bottom:20px">Нам доверяют переработчики, сети и дистрибьюторы</p>
+    <div class="logos reveal">
+      <div>МЯСНОЙ ДОМ</div><div>ГРИЛЬ&nbsp;МАРКЕТ</div><div>ФУД-ЛОГИСТИК</div>
+      <div>СЫТЫЙ&nbsp;ПОВАР</div><div>АГРО-ТОРГ</div><div>КУЛИНАРЪ</div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ПРОДУКЦИЯ ================= -->
+<section class="section section--cream">
+  <div class="container">
+    <div class="section-head section-head--row">
+      <div>
+        <div class="eyebrow">Номенклатура</div>
+        <h2>Полная линейка куриного сырья</h2>
+        <p class="lead" style="margin-top:14px">19 позиций в постоянном наличии: от целой тушки до ММО для промышленной переработки. Охлаждённое и замороженное, ГОСТ и ТУ.</p>
+      </div>
+      <a class="btn btn--dark" href="#catalog">Весь каталог</a>
+    </div>
+
+    <div class="grid grid-3 reveal">
+      <a class="cat" href="#catalog/tushka">
+        <div class="cat__media"><img src="assets/img/whole.svg" alt="Тушка цыплёнка-бройлера"></div>
+        <div class="cat__body">
+          <h3>Тушка ЦБ</h3>
+          <p>Потрошёная, 1 сорт, калибр 0,9–1,7 кг. Охлаждённая и шоковой заморозки.</p>
+          <div class="cat__meta"><span class="cat__price">от 172 ₽<small>за кг, с НДС</small></span><span class="link-arrow">3 SKU →</span></div>
+        </div>
+      </a>
+      <a class="cat" href="#catalog/razdelka">
+        <div class="cat__media"><img src="assets/img/leg.svg" alt="Разделка курицы"></div>
+        <div class="cat__body">
+          <h3>Разделка</h3>
+          <p>Грудка на кости, окорочок, бедро, голень, крыло, спинно-лопаточная часть.</p>
+          <div class="cat__meta"><span class="cat__price">от 78 ₽<small>за кг, с НДС</small></span><span class="link-arrow">6 SKU →</span></div>
+        </div>
+      </a>
+      <a class="cat" href="#catalog/file">
+        <div class="cat__media"><img src="assets/img/breast.svg" alt="Филе куриной грудки"></div>
+        <div class="cat__body">
+          <h3>Филе</h3>
+          <p>Филе грудки и бедра без кости и кожи. Лоток в МГС или шоковая заморозка.</p>
+          <div class="cat__meta"><span class="cat__price">от 312 ₽<small>за кг, с НДС</small></span><span class="link-arrow">3 SKU →</span></div>
+        </div>
+      </a>
+      <a class="cat" href="#catalog/subprod">
+        <div class="cat__media"><img src="assets/img/giblets.svg" alt="Куриные субпродукты"></div>
+        <div class="cat__body">
+          <h3>Субпродукты</h3>
+          <p>Печень, сердце, желудки, шеи, суповой набор. Блочная заморозка по 1 кг.</p>
+          <div class="cat__meta"><span class="cat__price">от 62 ₽<small>за кг, с НДС</small></span><span class="link-arrow">5 SKU →</span></div>
+        </div>
+      </a>
+      <a class="cat" href="#catalog/mmo">
+        <div class="cat__media"><img src="assets/img/mdm.svg" alt="Мясо птицы механической обвалки"></div>
+        <div class="cat__body">
+          <h3>ММО и фарш</h3>
+          <p>Мясо механической обвалки сорт 1 и крупноизмельчённый фарш для переработки.</p>
+          <div class="cat__meta"><span class="cat__price">от 128 ₽<small>за кг, с НДС</small></span><span class="link-arrow">2 SKU →</span></div>
+        </div>
+      </a>
+      <a class="cat" href="#catalog/razdelka">
+        <div class="cat__media"><img src="assets/img/wing.svg" alt="Крыло куриное"></div>
+        <div class="cat__body">
+          <h3>Позиции под HoReCa</h3>
+          <p>Калиброванное крыло, голень и филе под спецификацию заказчика и свою упаковку.</p>
+          <div class="cat__meta"><span class="cat__price">по запросу<small>тираж от 3 т</small></span><span class="link-arrow">Обсудить →</span></div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ПРЕИМУЩЕСТВА ================= -->
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">Почему с нами работают</div>
+      <h2>Поставщик, на котором держится ваш производственный план</h2>
+    </div>
+    <div class="grid grid-3 reveal">
+      <div class="card">
+        <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+        <h3>Прямой контракт с фабрикой</h3>
+        <p>Мы часть производственной группы, а не перекупщик. Цена без наценки посредника и прозрачное происхождение каждой партии.</p>
+      </div>
+      <div class="card">
+        <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg></div>
+        <h3>Фиксация цены по контракту</h3>
+        <p>Годовой договор с фиксированной формулой цены: вы планируете себестоимость на квартал вперёд, а не пересчитываете её каждую неделю.</p>
+      </div>
+      <div class="card">
+        <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+        <h3>Сборка заказа за 24 часа</h3>
+        <p>Собственные холодильные мощности на 3 200 тонн единовременного хранения — отгружаем со склада, а не «под забой».</p>
+      </div>
+      <div class="card">
+        <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3v4a1 1 0 0 0 1 1h4"/><path d="M17 21H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h7l5 5v11a2 2 0 0 1-2 2z"/><path d="M9 13h6M9 17h4"/></svg></div>
+        <h3>Полный пакет документов</h3>
+        <p>ВСД в системе «Меркурий», декларации соответствия ТР ТС 021/2011 и 034/2013, протоколы лаборатории на каждую партию, ЭДО через Диадок и СБИС.</p>
+      </div>
+      <div class="card">
+        <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 17h4V5H2v12h3"/><path d="M20 17h2v-3.34a4 4 0 0 0-1.17-2.83L19 9h-5v8h1"/><circle cx="7.5" cy="17.5" r="2.5"/><circle cx="17.5" cy="17.5" r="2.5"/></svg></div>
+        <h3>Своя рефрижераторная логистика</h3>
+        <p>28 машин от 1,5 до 20 тонн с датчиками температуры. Доставка по Москве и области — в день отгрузки, по регионам — 24–72 часа.</p>
+      </div>
+      <div class="card">
+        <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/></svg></div>
+        <h3>Персональный менеджер</h3>
+        <p>Один ответственный по всем вопросам: заявка, документы, рекламация, замена позиции. Среднее время ответа — 12 минут.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ПРОИЗВОДСТВО ================= -->
+<section class="section section--dark">
+  <div class="container">
+    <div class="split split--wide">
+      <div>
+        <div class="eyebrow">Производство полного цикла</div>
+        <h2>От инкубатора до вашей рампы — один контур ответственности</h2>
+        <p class="lead" style="margin-top:16px">Мы контролируем цепочку целиком: собственное родительское стадо, комбикормовый завод, площадки выращивания, убойный цех и холодильный комплекс. Поэтому качество сырья повторяемо от партии к партии.</p>
+        <ul class="checklist">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 13 4 4L19 7"/></svg>Корм собственного производства без ГМО и гормонов роста</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 13 4 4L19 7"/></svg>Воздушно-капельное охлаждение тушки — без хлора и водного набора массы</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 13 4 4L19 7"/></svg>Шоковая заморозка до −18 °C за 90 минут: сохранённая структура волокна</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 13 4 4L19 7"/></svg>Прослеживаемость по номеру партии — от площадки выращивания до накладной</li>
+        </ul>
+        <div class="btn-row" style="margin-top:30px">
+          <a class="btn btn--light" href="#company">О производстве</a>
+          <a class="btn btn--outline-light" href="#quality">Сертификаты</a>
+        </div>
+      </div>
+
+      <div class="grid grid-2" style="align-content:start">
+        <div class="card"><div class="stats__num" style="color:#ffb289">120 000</div><p style="margin-top:8px">голов суточной мощности убойного цеха</p></div>
+        <div class="card"><div class="stats__num" style="color:#ffb289">3 200 т</div><p style="margin-top:8px">единовременного хранения в холодильниках</p></div>
+        <div class="card"><div class="stats__num" style="color:#ffb289">98,6 %</div><p style="margin-top:8px">заказов отгружено в срок в 2025 году</p></div>
+        <div class="card"><div class="stats__num" style="color:#ffb289">0,4 %</div><p style="margin-top:8px">доля рекламаций от объёма отгрузки</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= КАК РАБОТАЕМ ================= -->
+<section class="section section--cream">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">Процесс</div>
+      <h2>Как проходит поставка</h2>
+      <p class="lead" style="margin-top:14px">Первая отгрузка — в течение 1–2 рабочих дней с момента заявки.</p>
+    </div>
+    <div class="steps reveal">
+      <div class="step">
+        <div class="step__n">ШАГ 01</div>
+        <h3>Заявка и спецификация</h3>
+        <p>Присылаете позиции и объём — считаем цену с учётом партии, региона и графика выборки.</p>
+      </div>
+      <div class="step">
+        <div class="step__n">ШАГ 02</div>
+        <h3>Договор и образцы</h3>
+        <p>Подписываем договор поставки через ЭДО. По запросу отправляем образцы для входного контроля.</p>
+      </div>
+      <div class="step">
+        <div class="step__n">ШАГ 03</div>
+        <h3>Сборка и контроль</h3>
+        <p>Комплектуем партию, проверяем температуру и маркировку, оформляем ВСД в «Меркурии».</p>
+      </div>
+      <div class="step">
+        <div class="step__n">ШАГ 04</div>
+        <h3>Доставка и закрытие</h3>
+        <p>Рефрижератор привозит партию в согласованное окно, УПД и протоколы приходят в ЭДО в тот же день.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ГЕОГРАФИЯ ================= -->
+<section class="section">
+  <div class="container">
+    <div class="split">
+      <div>
+        <div class="eyebrow">Логистика</div>
+        <h2>Возим туда, где вас ждёт производство</h2>
+        <p class="lead" style="margin-top:14px">Четыре распределительных склада закрывают европейскую часть России, Урал и Поволжье. Отгружаем самовывозом, своим транспортом и через проверенных перевозчиков в ЕАЭС.</p>
+        <div class="btn-row" style="margin-top:26px">
+          <a class="btn btn--primary" href="#delivery">Условия и тарифы доставки</a>
+        </div>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Направление</th><th>Срок</th><th>Мин. партия</th></tr></thead>
+          <tbody>
+            <tr><td>Москва и МО</td><td>в день отгрузки</td><td>300 кг</td></tr>
+            <tr><td>ЦФО (до 700 км)</td><td>24 часа</td><td>1 т</td></tr>
+            <tr><td>СЗФО, ЮФО</td><td>24–48 часов</td><td>3 т</td></tr>
+            <tr><td>ПФО, УрФО</td><td>48–72 часа</td><td>5 т</td></tr>
+            <tr><td>Казахстан, Беларусь</td><td>по графику</td><td>20 т (фура)</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ОТЗЫВЫ ================= -->
+<section class="section section--cream">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">Клиенты</div>
+      <h2>Что говорят закупщики</h2>
+    </div>
+    <div class="grid grid-3 reveal">
+      <div class="quote">
+        <p>«Перешли на ПТИЦА.ПРО после двух срывов графика у прежнего поставщика. За 14 месяцев — ни одной непоставки, выход филе стабильный, недовес не ловим».</p>
+        <div class="quote__who"><span class="avatar">АК</span><span><b>Алексей Кузьмин</b><small>директор по закупкам, мясокомбинат «Мясной дом»</small></span></div>
+      </div>
+      <div class="quote">
+        <p>«Для сети из 40 точек критично окно доставки. Здесь машина приходит в свой слот, документы в ЭДО — бухгалтерия закрывает месяц без нервов».</p>
+        <div class="quote__who"><span class="avatar">МС</span><span><b>Марина Соловьёва</b><small>категорийный менеджер, «Гриль Маркет»</small></span></div>
+      </div>
+      <div class="quote">
+        <p>«Берём ММО и спинку под колбасную группу. Стабильный жир и белок по протоколам, за год ни одной претензии по микробиологии».</p>
+        <div class="quote__who"><span class="avatar">ДВ</span><span><b>Дмитрий Власов</b><small>главный технолог, ПК «Кулинаръ»</small></span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section class="section">
+  <div class="container">
+    <div class="split" style="align-items:start">
+      <div>
+        <div class="eyebrow">Вопросы</div>
+        <h2>Отвечаем до первого звонка</h2>
+        <p class="lead" style="margin-top:14px">Если вопроса нет в списке — напишите менеджеру, ответим в течение рабочего дня.</p>
+        <div class="btn-row" style="margin-top:24px"><a class="btn btn--ghost" href="#contacts">Задать вопрос</a></div>
+      </div>
+      <div class="faq">
+        <div class="faq__item">
+          <button class="faq__q" type="button">Какая минимальная партия отгрузки?<span>+</span></button>
+          <div class="faq__a"><p>По Москве и области — от 300 кг, по регионам — от 1 тонны. Для позиций ММО и суповых наборов минимальная партия выше, она указана в карточке товара.</p></div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__q" type="button">Работаете ли вы с отсрочкой платежа?<span>+</span></button>
+          <div class="faq__a"><p>Да. Первые две поставки — по предоплате, далее возможна отсрочка 7, 14 или 21 день по результатам проверки контрагента. Для сетевых клиентов условия обсуждаются индивидуально.</p></div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__q" type="button">Можно ли получить образцы перед контрактом?<span>+</span></button>
+          <div class="faq__a"><p>Да, отправляем образцы по 3–5 кг на каждую позицию вместе с протоколами испытаний. По Москве привозим бесплатно, в регионы — транспортной компанией за наш счёт при подписанном намерении о поставке.</p></div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__q" type="button">Как контролируется температурный режим в пути?<span>+</span></button>
+          <div class="faq__a"><p>Каждая машина оснащена регистратором температуры. Распечатка термограммы прикладывается к партии, при отклонениях сверх допуска партия принимается обратно за наш счёт.</p></div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__q" type="button">Возможна ли фасовка под нашим брендом?<span>+</span></button>
+          <div class="faq__a"><p>Да, работаем по схеме private label: ваша плёнка и этикетка, наша упаковочная линия. Минимальный тираж — 3 тонны на SKU, срок запуска — 3 недели с момента утверждения макета.</p></div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__q" type="button">Что делать при расхождении по качеству?<span>+</span></button>
+          <div class="faq__a"><p>Рекламация принимается в течение 24 часов с момента приёмки. Менеджер оформляет акт, спорную партию забираем своим транспортом и в тот же день согласуем замену или возврат средств.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CTA ================= -->
+<section class="section section--tight">
+  <div class="container">
+    <div class="cta reveal">
+      <div class="cta__in">
+        <div>
+          <h2>Рассчитаем цену под ваш объём за один рабочий день</h2>
+          <p>Пришлите спецификацию или соберите заявку в каталоге — вернёмся с коммерческим предложением, графиком поставок и пакетом документов.</p>
+        </div>
+        <div class="btn-row" style="justify-content:flex-end">
+          <a class="btn btn--primary" href="#catalog">Собрать заявку</a>
+          <a class="btn btn--outline-light" href="tel:+74951234567">+7 (495) 123-45-67</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ПОДВАЛ ================= -->
+</div>
+
+<div class="route" data-page="catalog" hidden>
+<section class="page-head">
+  <div class="container page-head__in">
+    <div class="crumbs"><a href="#home">Главная</a> / Продукция</div>
+    <h1>Каталог куриного сырья</h1>
+    <p>19 позиций в постоянном наличии. Цены указаны с НДС 10% при самовывозе со склада в Москве; для партий от 5 тонн действует индивидуальная сетка.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="catalog-layout">
+
+      <aside class="filters">
+        <div class="filters__group">
+          <h4>Категория</h4>
+          <label class="fopt"><input type="checkbox" class="js-filter-cat" value="tushka">Тушка ЦБ</label>
+          <label class="fopt"><input type="checkbox" class="js-filter-cat" value="razdelka">Разделка</label>
+          <label class="fopt"><input type="checkbox" class="js-filter-cat" value="file">Филе</label>
+          <label class="fopt"><input type="checkbox" class="js-filter-cat" value="subprod">Субпродукты</label>
+          <label class="fopt"><input type="checkbox" class="js-filter-cat" value="mmo">ММО и фарш</label>
+        </div>
+        <div class="filters__group">
+          <h4>Состояние</h4>
+          <label class="fopt"><input type="checkbox" class="js-filter-state" value="chilled">Охлаждённое</label>
+          <label class="fopt"><input type="checkbox" class="js-filter-state" value="frozen">Замороженное</label>
+        </div>
+        <div class="filters__group">
+          <button class="btn btn--ghost btn--sm btn--block" id="filterReset" type="button">Сбросить фильтры</button>
+        </div>
+        <div class="filters__group" style="border-top:1px solid var(--line);padding-top:20px">
+          <h4>Нужен полный прайс?</h4>
+          <p class="small muted" style="margin-bottom:12px">Пришлём файл XLSX со всеми позициями и сеткой скидок по объёму.</p>
+          <a class="btn btn--dark btn--sm btn--block" href="#contacts">Запросить прайс</a>
+        </div>
+      </aside>
+
+      <div>
+        <div class="catalog-bar">
+          <div class="search">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+            <input id="catalogSearch" type="search" placeholder="Поиск по названию или артикулу">
+          </div>
+          <span class="small muted" id="catalogCount"></span>
+        </div>
+
+        <div class="plist" id="productList"></div>
+
+        <div class="card" style="margin-top:28px;display:flex;gap:22px;align-items:center;flex-wrap:wrap;justify-content:space-between">
+          <div>
+            <h3 style="margin-bottom:6px">Нет нужной позиции или спецификации?</h3>
+            <p class="muted small">Работаем под ТЗ заказчика: калибровка, нестандартная разделка, фасовка под вашим брендом.</p>
+          </div>
+          <a class="btn btn--primary" href="#contacts">Обсудить спецификацию</a>
+        </div>
+
+        <div style="margin-top:36px">
+          <h3 style="margin-bottom:14px">Условия ценообразования</h3>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>Объём в месяц</th><th>Скидка к прайсу</th><th>Условия оплаты</th></tr></thead>
+              <tbody>
+                <tr><td>до 5 тонн</td><td>базовая цена</td><td>предоплата 100%</td></tr>
+                <tr><td>5–20 тонн</td><td>−3%</td><td>предоплата 50% / отсрочка 7 дней</td></tr>
+                <tr><td>20–100 тонн</td><td>−6%</td><td>отсрочка 14 дней</td></tr>
+                <tr><td>от 100 тонн</td><td>индивидуально</td><td>отсрочка до 21 дня, годовой контракт</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="small muted" style="margin-top:12px">Цены действительны на дату публикации прайса и фиксируются в спецификации к договору поставки.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+</div>
+
+<div class="route" data-page="company" hidden>
+<section class="page-head">
+  <div class="container page-head__in">
+    <div class="crumbs"><a href="#home">Главная</a> / Компания</div>
+    <h1>Производство полного цикла</h1>
+    <p>ПТИЦА.ПРО — производственно-торговая группа: мы выращиваем, перерабатываем, храним и доставляем птицу сами. Клиент получает предсказуемое качество и цену без цепочки посредников.</p>
+  </div>
+</section>
+
+<!-- ЦИФРЫ -->
+<section class="section section--tight">
+  <div class="container">
+    <div class="grid grid-4 reveal">
+      <div class="card">
+        <div class="stats__num" style="color:var(--ink)"><span data-count="2014">0</span></div>
+        <p style="margin-top:8px">год основания компании</p>
+      </div>
+      <div class="card">
+        <div class="stats__num" style="color:var(--ink)"><span data-count="14200">0</span> т</div>
+        <p style="margin-top:8px">отгрузка готовой продукции за 2025 год</p>
+      </div>
+      <div class="card">
+        <div class="stats__num" style="color:var(--ink)"><span data-count="410">0</span></div>
+        <p style="margin-top:8px">сотрудников на производстве и в логистике</p>
+      </div>
+      <div class="card">
+        <div class="stats__num" style="color:var(--ink)"><span data-count="9">0</span> регионов</div>
+        <p style="margin-top:8px">постоянной географии поставок</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ЦИКЛ -->
+<section class="section">
+  <div class="container">
+    <div class="split split--wide" style="align-items:start">
+      <div>
+        <div class="eyebrow">Цепочка создания продукта</div>
+        <h2>Шесть звеньев, которые мы контролируем сами</h2>
+        <p class="lead" style="margin-top:14px">Отсутствие «серых» звеньев — главный аргумент для технолога заказчика: любую партию можно раскрутить до конкретной площадки, даты убоя и протокола лаборатории.</p>
+        <div class="card" style="margin-top:26px;background:var(--cream)">
+          <h3 style="font-size:18px;margin-bottom:8px">Прослеживаемость</h3>
+          <p>Номер партии на этикетке содержит код площадки, смену и дату выработки. По этому номеру мы за 10 минут поднимаем всю историю: корм, ветеринарные обработки, показатели лаборатории, температурный лог хранения и перевозки.</p>
+        </div>
+      </div>
+
+      <ol class="timeline reveal">
+        <li class="tl-item">
+          <span class="tl-tag">Этап 01</span>
+          <h3>Родительское стадо и инкубаторий</h3>
+          <p>Собственный инкубаторий мощностью 32 млн яиц в год. Единый кросс — стабильный выход филе и предсказуемая калибровка тушки.</p>
+        </li>
+        <li class="tl-item">
+          <span class="tl-tag">Этап 02</span>
+          <h3>Комбикормовый завод</h3>
+          <p>Корм собственной рецептуры на основе пшеницы, кукурузы и соевого шрота. Без стимуляторов роста и кормовых антибиотиков, входной контроль каждой партии зерна.</p>
+        </li>
+        <li class="tl-item">
+          <span class="tl-tag">Этап 03</span>
+          <h3>Площадки выращивания</h3>
+          <p>14 корпусов напольного содержания с автоматическим микроклиматом. Ветеринарный контроль на всём цикле, программа биобезопасности закрытого типа.</p>
+        </li>
+        <li class="tl-item">
+          <span class="tl-tag">Этап 04</span>
+          <h3>Убойный цех и разделка</h3>
+          <p>Линия на 120 000 голов в сутки, воздушно-капельное охлаждение, автоматическая калибровка и разделка по спецификации заказчика.</p>
+        </li>
+        <li class="tl-item">
+          <span class="tl-tag">Этап 05</span>
+          <h3>Шоковая заморозка и хранение</h3>
+          <p>Скороморозильные аппараты выводят продукт на −18 °C за 90 минут. Холодильный комплекс на 3 200 тонн с раздельными камерами охлаждённой и замороженной группы.</p>
+        </li>
+        <li class="tl-item">
+          <span class="tl-tag">Этап 06</span>
+          <h3>Отгрузка и доставка</h3>
+          <p>Четыре распределительных склада и 28 рефрижераторов. Погрузка через температурные шлюзы, регистратор температуры в каждом рейсе.</p>
+        </li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- МОЩНОСТИ -->
+<section class="section section--cream">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">Мощности</div>
+      <h2>Что стоит за словом «стабильные объёмы»</h2>
+    </div>
+    <div class="table-wrap reveal">
+      <table>
+        <thead><tr><th>Актив</th><th>Мощность</th><th>Локация</th><th>Статус</th></tr></thead>
+        <tbody>
+          <tr><td>Инкубаторий</td><td>32 млн яиц / год</td><td>Белгородская область</td><td>в работе</td></tr>
+          <tr><td>Комбикормовый завод</td><td>18 т / час</td><td>Белгородская область</td><td>в работе</td></tr>
+          <tr><td>Площадки выращивания</td><td>14 корпусов</td><td>Белгородская, Курская обл.</td><td>в работе</td></tr>
+          <tr><td>Убойный цех</td><td>120 000 голов / сутки</td><td>Белгородская область</td><td>в работе</td></tr>
+          <tr><td>Холодильный комплекс</td><td>3 200 т хранения</td><td>Белгород, Москва</td><td>в работе</td></tr>
+          <tr><td>Распределительные склады</td><td>4 площадки</td><td>Москва, Белгород, Казань, Екатеринбург</td><td>в работе</td></tr>
+          <tr><td>Автопарк</td><td>28 рефрижераторов</td><td>федеральный</td><td>в работе</td></tr>
+          <tr><td>Линия глубокой переработки</td><td>+2 500 т / год</td><td>Москва</td><td>запуск 2027</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- СТРАТЕГИЯ -->
+<section class="section section--dark">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">Стратегия 2026–2028</div>
+      <h2>Куда мы растём</h2>
+      <p class="lead" style="margin-top:14px">Рынок мяса птицы остаётся самым устойчивым сегментом мясной категории: птица — базовый белок с наименьшей себестоимостью. Наш рост строится на трёх направлениях.</p>
+    </div>
+    <div class="grid grid-3 reveal">
+      <div class="card">
+        <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg></div>
+        <h3>Глубокая переработка</h3>
+        <p>Запуск линии полуфабрикатов и маринованной группы в 2027 году: рост маржинальности с 11% до 19% на переработанной тонне.</p>
+      </div>
+      <div class="card">
+        <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18a15 15 0 0 1 0-18"/></svg></div>
+        <h3>Экспорт в ЕАЭС и Ближний Восток</h3>
+        <p>Аттестация площадки под халяль и экспортные требования, целевая доля экспорта в выручке — 15% к 2028 году.</p>
+      </div>
+      <div class="card">
+        <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 9h10M7 13h6"/></svg></div>
+        <h3>Цифровая платформа закупки</h3>
+        <p>Личный кабинет клиента: остатки в реальном времени, история партий, документы и повторная заявка в два клика.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- КОМАНДА -->
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">Команда</div>
+      <h2>С кем вы будете работать</h2>
+    </div>
+    <div class="grid grid-4 reveal">
+      <div class="card">
+        <span class="avatar" style="width:54px;height:54px;font-size:17px;margin-bottom:14px">СГ</span>
+        <h3 style="font-size:18px">Сергей Гончаров</h3>
+        <p class="small muted" style="margin-bottom:8px">Генеральный директор</p>
+        <p>18 лет в мясной индустрии, прежде — директор по производству федерального птицеводческого холдинга.</p>
+      </div>
+      <div class="card">
+        <span class="avatar" style="width:54px;height:54px;font-size:17px;margin-bottom:14px">ЕЛ</span>
+        <h3 style="font-size:18px">Елена Лапина</h3>
+        <p class="small muted" style="margin-bottom:8px">Коммерческий директор</p>
+        <p>Отвечает за контрактные условия и работу с сетевыми клиентами. Ведёт ключевые переговоры лично.</p>
+      </div>
+      <div class="card">
+        <span class="avatar" style="width:54px;height:54px;font-size:17px;margin-bottom:14px">ИК</span>
+        <h3 style="font-size:18px">Игорь Кравцов</h3>
+        <p class="small muted" style="margin-bottom:8px">Директор по качеству</p>
+        <p>Внедрил систему ХАССП и лабораторный контроль по 24 показателям. Ветеринарный врач по образованию.</p>
+      </div>
+      <div class="card">
+        <span class="avatar" style="width:54px;height:54px;font-size:17px;margin-bottom:14px">АМ</span>
+        <h3 style="font-size:18px">Анна Морозова</h3>
+        <p class="small muted" style="margin-bottom:8px">Руководитель логистики</p>
+        <p>Планирует маршруты и температурные окна. Держит показатель отгрузки в срок на уровне 98,6%.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="container">
+    <div class="cta reveal">
+      <div class="cta__in">
+        <div>
+          <h2>Приезжайте на производство</h2>
+          <p>Проводим аудит площадки для потенциальных партнёров: цех, холодильники, лаборатория и склад — с сопровождением директора по качеству.</p>
+        </div>
+        <div class="btn-row" style="justify-content:flex-end">
+          <a class="btn btn--primary" href="#contacts">Записаться на визит</a>
+          <a class="btn btn--outline-light" href="#quality">Документы</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</div>
+
+<div class="route" data-page="quality" hidden>
+<section class="page-head">
+  <div class="container page-head__in">
+    <div class="crumbs"><a href="#home">Главная</a> / Качество</div>
+    <h1>Качество, которое можно проверить</h1>
+    <p>Мы работаем с промышленными заказчиками, поэтому качество у нас — это не обещание, а комплект документов и цифры протоколов на каждую партию.</p>
+  </div>
+</section>
+
+<!-- СИСТЕМА -->
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">Система контроля</div>
+      <h2>Четыре рубежа проверки до вашей рампы</h2>
+    </div>
+    <div class="grid grid-4 reveal">
+      <div class="card">
+        <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M2 12h20"/></svg></div>
+        <h3>Входной контроль</h3>
+        <p>Проверка каждой партии зерна и премиксов, ветеринарное сопровождение поголовья, контроль воды и микроклимата на площадках.</p>
+      </div>
+      <div class="card">
+        <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12l-1 7 4 6v5H5v-5l4-6z"/></svg></div>
+        <h3>Контроль в цехе</h3>
+        <p>Инспекция тушки на линии, контроль температуры в точках CCP по плану ХАССП, санитарная обработка оборудования между сменами.</p>
+      </div>
+      <div class="card">
+        <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6v5l4 9a3 3 0 0 1-3 4H8a3 3 0 0 1-3-4l4-9z"/></svg></div>
+        <h3>Лаборатория</h3>
+        <p>Собственная лаборатория и аккредитованная сторонняя: микробиология, антибиотики, тяжёлые металлы, массовая доля влаги и белка.</p>
+      </div>
+      <div class="card">
+        <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 7 12 3 4 7v10l8 4 8-4z"/><path d="m4 7 8 4 8-4M12 21V11"/></svg></div>
+        <h3>Отгрузочный контроль</h3>
+        <p>Сверка маркировки, температуры ядра продукта и целостности упаковки, оформление ВСД в «Меркурии», термограмма в рейсе.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ДОКУМЕНТЫ -->
+<section class="section section--cream">
+  <div class="container">
+    <div class="section-head section-head--row">
+      <div>
+        <div class="eyebrow">Документы</div>
+        <h2>Пакет, который получает ваш технолог</h2>
+        <p class="lead" style="margin-top:14px">Полный комплект высылаем по запросу до подписания договора — вместе с образцами.</p>
+      </div>
+      <a class="btn btn--dark" href="#contacts">Запросить документы</a>
+    </div>
+
+    <div class="docs reveal">
+      <div class="doc">
+        <div class="doc__sheet"><svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M14 3v4a1 1 0 0 0 1 1h4"/><path d="M17 21H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h7l5 5v11a2 2 0 0 1-2 2z"/></svg></div>
+        <b>Декларация ТР ТС 021/2011</b>
+        <small>Безопасность пищевой продукции</small>
+      </div>
+      <div class="doc">
+        <div class="doc__sheet"><svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M14 3v4a1 1 0 0 0 1 1h4"/><path d="M17 21H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h7l5 5v11a2 2 0 0 1-2 2z"/></svg></div>
+        <b>Декларация ТР ТС 034/2013</b>
+        <small>Безопасность мяса и мясной продукции</small>
+      </div>
+      <div class="doc">
+        <div class="doc__sheet"><svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="10" r="6"/><path d="m8.5 15-1.5 6 5-2 5 2-1.5-6"/></svg></div>
+        <b>Сертификат ISO 22000</b>
+        <small>Система менеджмента безопасности пищевой продукции</small>
+      </div>
+      <div class="doc">
+        <div class="doc__sheet"><svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="10" r="6"/><path d="m8.5 15-1.5 6 5-2 5 2-1.5-6"/></svg></div>
+        <b>Внедрённая система ХАССП</b>
+        <small>План CCP и процедуры верификации</small>
+      </div>
+      <div class="doc">
+        <div class="doc__sheet"><svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+        <b>Ветеринарное свидетельство</b>
+        <small>ВСД в ФГИС «Меркурий» на каждую партию</small>
+      </div>
+      <div class="doc">
+        <div class="doc__sheet"><svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 3h6v5l4 9a3 3 0 0 1-3 4H8a3 3 0 0 1-3-4l4-9z"/></svg></div>
+        <b>Протоколы испытаний</b>
+        <small>Аккредитованная лаборатория, по каждой выработке</small>
+      </div>
+      <div class="doc">
+        <div class="doc__sheet"><svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 9h10M7 13h6"/></svg></div>
+        <b>Спецификации на продукцию</b>
+        <small>Калибр, выход, органолептика, режимы хранения</small>
+      </div>
+      <div class="doc">
+        <div class="doc__sheet"><svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 19V5a2 2 0 0 1 2-2h9l5 5v11a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z"/><path d="M8 12h8M8 16h5"/></svg></div>
+        <b>Карточка предприятия</b>
+        <small>Реквизиты, устав, выписка ЕГРЮЛ</small>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ЛАБОРАТОРИЯ -->
+<section class="section">
+  <div class="container">
+    <div class="split split--wide" style="align-items:start">
+      <div>
+        <div class="eyebrow">Лабораторный контроль</div>
+        <h2>24 показателя на каждую выработку</h2>
+        <p class="lead" style="margin-top:14px">Ниже — ключевые контролируемые показатели и нормативы, по которым мы принимаем решение об отгрузке партии. Протокол прикладывается к товаросопроводительным документам.</p>
+        <ul class="checklist">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 13 4 4L19 7"/></svg>Партия не уходит со склада без закрытого протокола</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 13 4 4L19 7"/></svg>Арбитражные пробы хранятся весь срок годности партии</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 13 4 4L19 7"/></svg>Ежеквартальный внешний аудит по программе ХАССП</li>
+        </ul>
+      </div>
+      <div class="table-wrap reveal">
+        <table>
+          <thead><tr><th>Показатель</th><th>Норматив</th><th>Периодичность</th></tr></thead>
+          <tbody>
+            <tr><td>КМАФАнМ</td><td>не более 1×10⁵ КОЕ/г</td><td>каждая выработка</td></tr>
+            <tr><td>Сальмонелла</td><td>не допускается в 25 г</td><td>каждая выработка</td></tr>
+            <tr><td>L. monocytogenes</td><td>не допускается в 25 г</td><td>каждая выработка</td></tr>
+            <tr><td>Антибиотики</td><td>не допускаются</td><td>каждая партия сырья</td></tr>
+            <tr><td>Массовая доля влаги</td><td>по спецификации SKU</td><td>каждая выработка</td></tr>
+            <tr><td>Тяжёлые металлы</td><td>в пределах ТР ТС 021/2011</td><td>ежемесячно</td></tr>
+            <tr><td>Температура ядра при отгрузке</td><td>0…+2 °C / не выше −18 °C</td><td>каждая машина</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ПРИНЦИПЫ -->
+<section class="section section--dark">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">Принципы</div>
+      <h2>Чего мы не делаем принципиально</h2>
+    </div>
+    <div class="grid grid-3 reveal">
+      <div class="card"><h3>Не наливаем воду</h3><p>Воздушно-капельное охлаждение вместо водяного: вы платите за мясо, а не за влагу в тушке. Потери при разморозке — в пределах спецификации.</p></div>
+      <div class="card"><h3>Не используем хлор</h3><p>Обработка тушки без хлорсодержащих растворов и перманганата — это влияет и на вкус, и на допуск в сети с жёсткими стандартами.</p></div>
+      <div class="card"><h3>Не смешиваем партии</h3><p>Каждая паллета — одна выработка. Никакого «сборного» товара с разных дат и площадок в одной отгрузке.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="container">
+    <div class="cta reveal">
+      <div class="cta__in">
+        <div>
+          <h2>Проверьте нас на образцах</h2>
+          <p>Отправим 3–5 кг по каждой интересующей позиции с полным пакетом протоколов — для входного контроля вашего технолога.</p>
+        </div>
+        <div class="btn-row" style="justify-content:flex-end">
+          <a class="btn btn--primary" href="#contacts">Запросить образцы</a>
+          <a class="btn btn--outline-light" href="#catalog">В каталог</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</div>
+
+<div class="route" data-page="delivery" hidden>
+<section class="page-head">
+  <div class="container page-head__in">
+    <div class="crumbs"><a href="#home">Главная</a> / Доставка и оплата</div>
+    <h1>Доставка, оплата и документы</h1>
+    <p>Собственный рефрижераторный парк, четыре склада и понятные финансовые условия. Ниже — всё, что нужно знать закупщику до первой отгрузки.</p>
+  </div>
+</section>
+
+<!-- СПОСОБЫ -->
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">Способы отгрузки</div>
+      <h2>Три сценария поставки</h2>
+    </div>
+    <div class="grid grid-3 reveal">
+      <div class="card">
+        <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 17h4V5H2v12h3"/><path d="M20 17h2v-3.34a4 4 0 0 0-1.17-2.83L19 9h-5v8h1"/><circle cx="7.5" cy="17.5" r="2.5"/><circle cx="17.5" cy="17.5" r="2.5"/></svg></div>
+        <h3>Доставка нашим транспортом</h3>
+        <p>28 рефрижераторов от 1,5 до 20 тонн. Согласованное окно выгрузки, регистратор температуры, экспедитор с полным пакетом документов.</p>
+      </div>
+      <div class="card">
+        <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 7 12 3 4 7v10l8 4 8-4z"/><path d="m4 7 8 4 8-4M12 21V11"/></svg></div>
+        <h3>Самовывоз со склада</h3>
+        <p>Погрузка через температурный шлюз за 40–60 минут. Требования к транспорту: рефрижератор класса С, санитарный паспорт, режим по типу продукции.</p>
+      </div>
+      <div class="card">
+        <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18a15 15 0 0 1 0-18"/></svg></div>
+        <h3>Поставка в ЕАЭС</h3>
+        <p>Отгрузка фурами по 20 тонн в Казахстан и Беларусь по графику, с оформлением всех экспортных ветеринарных документов.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ТАРИФЫ -->
+<section class="section section--cream">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">Сроки и стоимость</div>
+      <h2>Направления доставки</h2>
+      <p class="lead" style="margin-top:14px">При заказе от указанного объёма доставка включена в цену продукции. Ниже — тариф для партий меньше «бесплатного» порога.</p>
+    </div>
+    <div class="table-wrap reveal">
+      <table>
+        <thead><tr><th>Направление</th><th>Срок доставки</th><th>Мин. партия</th><th>Бесплатно от</th><th>Тариф ниже порога</th></tr></thead>
+        <tbody>
+          <tr><td>Москва и Московская область</td><td>в день отгрузки</td><td>300 кг</td><td>1 т</td><td>3 500 ₽ за рейс</td></tr>
+          <tr><td>ЦФО, до 700 км</td><td>24 часа</td><td>1 т</td><td>3 т</td><td>28 ₽ / км</td></tr>
+          <tr><td>СЗФО и ЮФО</td><td>24–48 часов</td><td>3 т</td><td>5 т</td><td>26 ₽ / км</td></tr>
+          <tr><td>ПФО и УрФО</td><td>48–72 часа</td><td>5 т</td><td>10 т</td><td>24 ₽ / км</td></tr>
+          <tr><td>Казахстан, Беларусь</td><td>по графику</td><td>20 т</td><td>20 т</td><td>по расчёту</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="small muted" style="margin-top:12px">Тарифы ориентировочные и подтверждаются в спецификации к договору поставки.</p>
+  </div>
+</section>
+
+<!-- ТЕМПЕРАТУРА -->
+<section class="section">
+  <div class="container">
+    <div class="split">
+      <div>
+        <div class="eyebrow">Холодовая цепь</div>
+        <h2>Температура под контролем на всём маршруте</h2>
+        <p class="lead" style="margin-top:14px">Разрыв холодовой цепи — главная причина рекламаций в отрасли. Мы закрыли этот риск процедурой и техникой.</p>
+        <ul class="checklist">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 13 4 4L19 7"/></svg>Охлаждённая группа: 0…+2 °C, замороженная: не выше −18 °C</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 13 4 4L19 7"/></svg>Предохлаждение кузова до подачи под погрузку</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 13 4 4L19 7"/></svg>Регистратор температуры и распечатка термограммы к каждой партии</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 13 4 4L19 7"/></svg>Замер температуры ядра продукта при приёмке в присутствии водителя</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 13 4 4L19 7"/></svg>Отклонение сверх допуска — партия забирается обратно за наш счёт</li>
+        </ul>
+      </div>
+      <div class="visual visual--cream">
+        <div style="width:100%;max-width:340px">
+          <div class="card" style="margin-bottom:14px">
+            <div class="small muted">Охлаждённая продукция</div>
+            <div class="stats__num" style="color:var(--ok)">0…+2 °C</div>
+            <div class="small muted" style="margin-top:6px">срок годности 5–7 суток</div>
+          </div>
+          <div class="card" style="margin-bottom:14px">
+            <div class="small muted">Замороженная продукция</div>
+            <div class="stats__num" style="color:#1d5b96">−18 °C</div>
+            <div class="small muted" style="margin-top:6px">срок годности 6–12 месяцев</div>
+          </div>
+          <div class="card">
+            <div class="small muted">Отгружено в срок в 2025 году</div>
+            <div class="stats__num" style="color:var(--accent)">98,6 %</div>
+            <div class="small muted" style="margin-top:6px">по данным внутреннего учёта</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ОПЛАТА -->
+<section class="section section--dark">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">Финансовые условия</div>
+      <h2>Оплата и документооборот</h2>
+    </div>
+    <div class="grid grid-2 reveal">
+      <div class="card">
+        <h3>Оплата</h3>
+        <ul class="checklist">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 13 4 4L19 7"/></svg>Безналичный расчёт с НДС 10%</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 13 4 4L19 7"/></svg>Первые две поставки — предоплата 100%</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 13 4 4L19 7"/></svg>Далее отсрочка 7, 14 или 21 день после проверки контрагента</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 13 4 4L19 7"/></svg>Годовой контракт с формулой цены — для объёмов от 100 т/мес</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 13 4 4L19 7"/></svg>Возможна работа через факторинг банка-партнёра</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Документы к отгрузке</h3>
+        <ul class="checklist">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 13 4 4L19 7"/></svg>УПД или ТОРГ-12 и счёт-фактура</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 13 4 4L19 7"/></svg>Транспортная накладная</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 13 4 4L19 7"/></svg>ВСД в ФГИС «Меркурий» (гасится при приёмке)</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 13 4 4L19 7"/></svg>Декларации соответствия и протоколы испытаний</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 13 4 4L19 7"/></svg>ЭДО: Диадок, СБИС, Контур — по вашему выбору</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section">
+  <div class="container">
+    <div class="split" style="align-items:start">
+      <div>
+        <div class="eyebrow">Вопросы по поставке</div>
+        <h2>Частые уточнения закупщиков</h2>
+        <p class="lead" style="margin-top:14px">Не нашли ответ — напишите менеджеру, разберём ваш кейс индивидуально.</p>
+        <div class="btn-row" style="margin-top:24px"><a class="btn btn--ghost" href="#contacts">Задать вопрос</a></div>
+      </div>
+      <div class="faq">
+        <div class="faq__item">
+          <button class="faq__q" type="button">Можно ли собрать сборную машину из разных позиций?<span>+</span></button>
+          <div class="faq__a"><p>Да. В одном рейсе комбинируем позиции с одинаковым температурным режимом. Охлаждённую и замороженную группу везём в одной машине только при наличии перегородки с раздельным контуром.</p></div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__q" type="button">Как согласовывается окно выгрузки?<span>+</span></button>
+          <div class="faq__a"><p>Окно фиксируется при подтверждении заявки. За 2 часа до прибытия логист присылает уведомление, при задержке более 30 минут — предупреждаем заранее и переносим слот по договорённости.</p></div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__q" type="button">Что делать при недостаче или бое упаковки?<span>+</span></button>
+          <div class="faq__a"><p>Расхождения фиксируются в акте при водителе. Недостача компенсируется в следующей отгрузке или возвратом средств в течение 3 рабочих дней.</p></div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__q" type="button">Есть ли график регулярных отгрузок?<span>+</span></button>
+          <div class="faq__a"><p>Да, для контрактных клиентов формируем недельный график с фиксированными днями и объёмами. Это даёт приоритет при дефиците охлаждённой группы в пиковые сезоны.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="container">
+    <div class="cta reveal">
+      <div class="cta__in">
+        <div>
+          <h2>Рассчитаем доставку до вашего склада</h2>
+          <p>Назовите город, объём и периодичность — вернёмся со сроком, тарифом и графиком отгрузок.</p>
+        </div>
+        <div class="btn-row" style="justify-content:flex-end">
+          <a class="btn btn--primary" href="#contacts">Рассчитать доставку</a>
+          <a class="btn btn--outline-light" href="#catalog">Каталог</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</div>
+
+<div class="route" data-page="contacts" hidden>
+<section class="page-head">
+  <div class="container page-head__in">
+    <div class="crumbs"><a href="#home">Главная</a> / Контакты</div>
+    <h1>Контакты</h1>
+    <p>Отвечаем на заявки в среднем за 12 минут в рабочее время. Для срочных отгрузок звоните напрямую в отдел продаж.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="split split--wide" style="align-items:start">
+
+      <div class="grid grid-2 contact-grid" style="align-content:start">
+        <div class="contact-card">
+          <h3>Отдел продаж</h3>
+          <div class="contact-line">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+            <span><b>Телефон</b><a href="tel:+74951234567">+7 (495) 123-45-67</a></span>
+          </div>
+          <div class="contact-line">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg>
+            <span><b>E-mail</b><a href="mailto:sales@ptica.pro">sales@ptica.pro</a></span>
+          </div>
+          <div class="contact-line">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+            <span><b>Часы работы</b>Пн–Пт 8:00–20:00, Сб 9:00–15:00</span>
+          </div>
+        </div>
+
+        <div class="contact-card">
+          <h3>Логистика и склад</h3>
+          <div class="contact-line">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+            <span><b>Диспетчер</b><a href="tel:+74951234568">+7 (495) 123-45-68</a></span>
+          </div>
+          <div class="contact-line">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg>
+            <span><b>E-mail</b><a href="mailto:logistic@ptica.pro">logistic@ptica.pro</a></span>
+          </div>
+          <div class="contact-line">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+            <span><b>Отгрузка</b>Ежедневно 6:00–22:00</span>
+          </div>
+        </div>
+
+        <div class="contact-card">
+          <h3>Бухгалтерия</h3>
+          <div class="contact-line">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg>
+            <span><b>E-mail</b><a href="mailto:buh@ptica.pro">buh@ptica.pro</a></span>
+          </div>
+          <div class="contact-line">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14 3v4a1 1 0 0 0 1 1h4"/><path d="M17 21H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h7l5 5v11a2 2 0 0 1-2 2z"/></svg>
+            <span><b>ЭДО</b>Диадок, СБИС, Контур</span>
+          </div>
+        </div>
+
+        <div class="contact-card">
+          <h3>Реквизиты</h3>
+          <p class="small" style="line-height:1.75;color:var(--ink-2)">
+            ООО «Птица Про»<br>
+            ИНН 7701234567 · КПП 770101001<br>
+            ОГРН 1147746000000<br>
+            Юр. адрес: 127015, Москва, ул. Складочная, 1, стр. 18<br>
+            Р/с 40702810000000000000<br>
+            Банк: ПАО «Банк», БИК 044525000
+          </p>
+        </div>
+      </div>
+
+      <div class="hero-card" style="box-shadow:var(--shadow-m);border:1px solid var(--line)">
+        <h3>Заявка на прайс-лист и образцы</h3>
+        <p class="hero-card__sub">Заполните форму — менеджер пришлёт актуальный прайс, спецификации и рассчитает цену под ваш объём.</p>
+        <form data-form="contact">
+          <div class="field">
+            <label for="c-name">Имя</label>
+            <input id="c-name" name="name" required placeholder="Иван Петров">
+          </div>
+          <div class="field">
+            <label for="c-company">Компания</label>
+            <input id="c-company" name="company" placeholder="ООО «Мясной дом»">
+          </div>
+          <div class="field">
+            <label for="c-phone">Телефон</label>
+            <input id="c-phone" name="phone" type="tel" required placeholder="+7 (___) ___-__-__">
+          </div>
+          <div class="field">
+            <label for="c-email">E-mail</label>
+            <input id="c-email" name="email" type="email" placeholder="zakupki@company.ru">
+          </div>
+          <div class="field">
+            <label for="c-type">Что интересует</label>
+            <select id="c-type" name="type">
+              <option>Прайс-лист на всю номенклатуру</option>
+              <option>Образцы продукции</option>
+              <option>Расчёт доставки</option>
+              <option>Годовой контракт</option>
+              <option>Фасовка под своим брендом</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="c-msg">Комментарий</label>
+            <textarea id="c-msg" name="message" placeholder="Позиции, объём в месяц, город доставки"></textarea>
+          </div>
+          <button class="btn btn--primary btn--block" type="submit" data-label="Отправить заявку">Отправить заявку</button>
+          <div class="form-ok">Спасибо! Заявка принята, менеджер свяжется с вами в течение 15 минут в рабочее время.</div>
+          <p class="form-note">Нажимая кнопку, вы соглашаетесь с <a href="#">политикой обработки персональных данных</a>.</p>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- СКЛАДЫ -->
+<section class="section section--cream">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">География</div>
+      <h2>Наши склады</h2>
+    </div>
+    <div class="grid grid-4 reveal" style="margin-bottom:26px">
+      <div class="card">
+        <h3 style="font-size:18px">Москва</h3>
+        <p class="small muted">ул. Складочная, 1, стр. 18</p>
+        <p style="margin-top:10px">Головной офис и распределительный склад. Отгрузка 6:00–22:00.</p>
+      </div>
+      <div class="card">
+        <h3 style="font-size:18px">Белгород</h3>
+        <p class="small muted">пр-т Б. Хмельницкого, 137</p>
+        <p style="margin-top:10px">Производственная площадка и холодильный комплекс на 3 200 т.</p>
+      </div>
+      <div class="card">
+        <h3 style="font-size:18px">Казань</h3>
+        <p class="small muted">ул. Тэцевская, 10</p>
+        <p style="margin-top:10px">Распределительный склад для ПФО. Отгрузка 8:00–20:00.</p>
+      </div>
+      <div class="card">
+        <h3 style="font-size:18px">Екатеринбург</h3>
+        <p class="small muted">ул. Монтёрская, 3</p>
+        <p style="margin-top:10px">Распределительный склад для УрФО. Отгрузка 8:00–20:00.</p>
+      </div>
+    </div>
+    <div class="map">
+      <div class="map__pin">
+        <b>Москва, ул. Складочная, 1, стр. 18</b>
+        <span class="small muted">Здесь будет интерактивная карта</span>
+      </div>
+    </div>
+  </div>
+</section>
+</div>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <a class="logo" href="#home">
+          <span class="logo__mark"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M16 7h.01"/><path d="M3.4 18H12a8 8 0 0 0 8-8V7a4 4 0 0 0-7.28-2.3L2 20"/><path d="m20 7 2 .5-2 .5"/><path d="M10 18v3"/><path d="M14 17.75V21"/><path d="M7 18a6 6 0 0 0 3.84-10.61"/></svg></span>
+          <span><b>ПТИЦА</b><i>.ПРО</i></span>
+        </a>
+        <p class="footer__req">Оптовые поставки мяса птицы и куриного сырья по России и ЕАЭС.<br><br>ООО «Птица Про»<br>ИНН 7701234567 · КПП 770101001<br>ОГРН 1147746000000</p>
+      </div>
+      <div>
+        <h4>Продукция</h4>
+        <ul>
+          <li><a href="#catalog/tushka">Тушка ЦБ</a></li>
+          <li><a href="#catalog/razdelka">Разделка</a></li>
+          <li><a href="#catalog/file">Филе</a></li>
+          <li><a href="#catalog/subprod">Субпродукты</a></li>
+          <li><a href="#catalog/mmo">ММО и фарш</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Компания</h4>
+        <ul>
+          <li><a href="#company">О производстве</a></li>
+          <li><a href="#quality">Качество и сертификаты</a></li>
+          <li><a href="#delivery">Доставка и оплата</a></li>
+          <li><a href="#contacts">Контакты</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Отдел продаж</h4>
+        <ul>
+          <li><a href="tel:+74951234567">+7 (495) 123-45-67</a></li>
+          <li><a href="mailto:sales@ptica.pro">sales@ptica.pro</a></li>
+          <li>Пн–Пт 8:00–20:00, Сб 9:00–15:00</li>
+          <li>127015, Москва, ул. Складочная, 1, стр. 18</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© <span class="js-year">2026</span> ООО «Птица Про». Все права защищены.</span>
+      <span>Политика обработки персональных данных · Договор оферты</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ================= ПАНЕЛЬ ЗАЯВКИ ================= -->
+<div class="drawer-backdrop" id="drawerBackdrop"></div>
+<aside class="drawer" id="drawer" aria-label="Заявка">
+  <div class="drawer__head">
+    <h3>Ваша заявка</h3>
+    <button class="drawer__close" id="drawerClose" type="button" aria-label="Закрыть">×</button>
+  </div>
+  <div class="drawer__body" id="drawerBody"></div>
+  <div class="drawer__foot">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:14px">
+      <span class="small muted">Ориентировочная сумма</span>
+      <b id="drawerTotal" style="font-family:var(--font-display);font-size:19px">—</b>
+    </div>
+    <form data-form="request">
+      <div class="field"><input name="phone" type="tel" required placeholder="Телефон для связи"></div>
+      <button class="btn btn--primary btn--block" type="submit" data-label="Отправить заявку">Отправить заявку</button>
+      <div class="form-ok">Заявка отправлена. Менеджер пришлёт коммерческое предложение в течение часа.</div>
+    </form>
+    <button class="btn btn--ghost btn--block btn--sm" id="drawerClear" type="button" style="margin-top:10px">Очистить заявку</button>
+  </div>
+</aside>
+
+<!-- ================= МОБИЛЬНОЕ МЕНЮ ================= -->
+<div class="mobile-nav" id="mobileNav">
+  <div class="mobile-nav__head">
+    <span class="logo"><span class="logo__mark"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M16 7h.01"/><path d="M3.4 18H12a8 8 0 0 0 8-8V7a4 4 0 0 0-7.28-2.3L2 20"/><path d="m20 7 2 .5-2 .5"/><path d="M10 18v3"/><path d="M14 17.75V21"/><path d="M7 18a6 6 0 0 0 3.84-10.61"/></svg></span><span><b>ПТИЦА</b><i>.ПРО</i></span></span>
+    <button class="drawer__close" id="mobileClose" type="button" aria-label="Закрыть">×</button>
+  </div>
+  <a href="#catalog">Продукция</a>
+  <a href="#company">Компания</a>
+  <a href="#quality">Качество</a>
+  <a href="#delivery">Доставка и оплата</a>
+  <a href="#contacts">Контакты</a>
+  <div class="mobile-nav__foot">
+    <a class="btn btn--primary btn--block" href="tel:+74951234567">+7 (495) 123-45-67</a>
+    <a class="btn btn--ghost btn--block" href="mailto:sales@ptica.pro">sales@ptica.pro</a>
+  </div>
+</div>
+
+
+
+<script src="assets/js/app.js"></script>
+<script>
+(function(){
+  var PAGES = ["home","catalog","company","quality","delivery","contacts"];
+
+  function setFilter(cat){
+    document.querySelectorAll('.js-filter-cat').forEach(function(i){ i.checked = false; });
+    if (!cat) { document.querySelector('.js-filter-cat') && document.querySelector('.js-filter-cat').dispatchEvent(new Event('change', {bubbles:true})); return; }
+    var box = document.querySelector('.js-filter-cat[value="' + cat + '"]');
+    if (box){ box.checked = true; box.dispatchEvent(new Event('change', {bubbles:true})); }
+  }
+
+  function reveal(){
+    document.querySelectorAll('.route:not([hidden]) .reveal:not(.is-in)').forEach(function(el){
+      if (el.getBoundingClientRect().top < window.innerHeight) el.classList.add('is-in');
+    });
+  }
+
+  function route(){
+    var raw = (location.hash || '#home').slice(1);
+    var parts = raw.split('/');
+    var name = parts[0];
+    if (PAGES.indexOf(name) === -1) return; // якорь внутри страницы — не трогаем маршрут
+
+    document.querySelectorAll('.route').forEach(function(el){
+      el.hidden = el.dataset.page !== name;
+    });
+    document.querySelectorAll('.nav a, .mobile-nav a').forEach(function(a){
+      a.classList.toggle('is-active', a.getAttribute('href') === '#' + name);
+    });
+    document.getElementById('mobileNav') && document.getElementById('mobileNav').classList.remove('is-open');
+    document.body.style.overflow = '';
+    window.scrollTo(0, 0);
+    if (name === 'catalog') setFilter(parts[1]);
+    setTimeout(reveal, 60);
+    setTimeout(reveal, 700);
+  }
+
+  window.addEventListener('hashchange', route);
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', route);
+  else route();
+})();
+</script>

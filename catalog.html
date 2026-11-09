@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Каталог и цены — куриное сырьё оптом | ПТИЦА.ПРО</title>
+<meta name="description" content="Каталог куриного сырья оптом: тушка ЦБ, разделка, филе, субпродукты, ММО. Артикулы, ГОСТ, упаковка, срок годности и оптовая цена за кг.">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="container topbar__in">
+    <div><span class="topbar__dot"></span>Свободный объём на завтра: 42 т охлаждённого, 130 т замороженного</div>
+    <ul class="topbar__list">
+      <li><a href="quality.html">Сертификаты и декларации</a></li>
+      <li><a href="delivery.html">Условия поставки</a></li>
+      <li><a href="mailto:sales@ptica.pro">sales@ptica.pro</a></li>
+    </ul>
+  </div>
+</div>
+
+<header class="header">
+  <div class="container header__in">
+    <a class="logo" href="index.html">
+      <span class="logo__mark"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M16 7h.01"/><path d="M3.4 18H12a8 8 0 0 0 8-8V7a4 4 0 0 0-7.28-2.3L2 20"/><path d="m20 7 2 .5-2 .5"/><path d="M10 18v3"/><path d="M14 17.75V21"/><path d="M7 18a6 6 0 0 0 3.84-10.61"/></svg></span>
+      <span><b>ПТИЦА</b><i>.ПРО</i></span>
+    </a>
+    <nav class="nav">
+      <a href="catalog.html">Продукция</a>
+      <a href="company.html">Компания</a>
+      <a href="quality.html">Качество</a>
+      <a href="delivery.html">Доставка и оплата</a>
+      <a href="contacts.html">Контакты</a>
+    </nav>
+    <div class="header__side">
+      <a class="header__phone" href="tel:+74951234567">+7 (495) 123-45-67<small>Отдел продаж · 8:00–20:00 МСК</small></a>
+      <button class="cart-btn js-open-cart" type="button">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M9 15h6"/></svg>
+        <span class="cart-btn__t">Заявка</span><span class="cart-btn__count js-cart-count">0</span>
+      </button>
+      <button class="burger" id="burger" type="button" aria-label="Меню"><i></i><i></i><i></i></button>
+    </div>
+  </div>
+</header>
+
+<section class="page-head">
+  <div class="container page-head__in">
+    <div class="crumbs"><a href="index.html">Главная</a> / Продукция</div>
+    <h1>Каталог куриного сырья</h1>
+    <p>19 позиций в постоянном наличии. Цены указаны с НДС 10% при самовывозе со склада в Москве; для партий от 5 тонн действует индивидуальная сетка.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="catalog-layout">
+
+      <aside class="filters">
+        <div class="filters__group">
+          <h4>Категория</h4>
+          <label class="fopt"><input type="checkbox" class="js-filter-cat" value="tushka">Тушка ЦБ</label>
+          <label class="fopt"><input type="checkbox" class="js-filter-cat" value="razdelka">Разделка</label>
+          <label class="fopt"><input type="checkbox" class="js-filter-cat" value="file">Филе</label>
+          <label class="fopt"><input type="checkbox" class="js-filter-cat" value="subprod">Субпродукты</label>
+          <label class="fopt"><input type="checkbox" class="js-filter-cat" value="mmo">ММО и фарш</label>
+        </div>
+        <div class="filters__group">
+          <h4>Состояние</h4>
+          <label class="fopt"><input type="checkbox" class="js-filter-state" value="chilled">Охлаждённое</label>
+          <label class="fopt"><input type="checkbox" class="js-filter-state" value="frozen">Замороженное</label>
+        </div>
+        <div class="filters__group">
+          <button class="btn btn--ghost btn--sm btn--block" id="filterReset" type="button">Сбросить фильтры</button>
+        </div>
+        <div class="filters__group" style="border-top:1px solid var(--line);padding-top:20px">
+          <h4>Нужен полный прайс?</h4>
+          <p class="small muted" style="margin-bottom:12px">Пришлём файл XLSX со всеми позициями и сеткой скидок по объёму.</p>
+          <a class="btn btn--dark btn--sm btn--block" href="contacts.html">Запросить прайс</a>
+        </div>
+      </aside>
+
+      <div>
+        <div class="catalog-bar">
+          <div class="search">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+            <input id="catalogSearch" type="search" placeholder="Поиск по названию или артикулу">
+          </div>
+          <span class="small muted" id="catalogCount"></span>
+        </div>
+
+        <div class="plist" id="productList"></div>
+
+        <div class="card" style="margin-top:28px;display:flex;gap:22px;align-items:center;flex-wrap:wrap;justify-content:space-between">
+          <div>
+            <h3 style="margin-bottom:6px">Нет нужной позиции или спецификации?</h3>
+            <p class="muted small">Работаем под ТЗ заказчика: калибровка, нестандартная разделка, фасовка под вашим брендом.</p>
+          </div>
+          <a class="btn btn--primary" href="contacts.html">Обсудить спецификацию</a>
+        </div>
+
+        <div style="margin-top:36px">
+          <h3 style="margin-bottom:14px">Условия ценообразования</h3>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>Объём в месяц</th><th>Скидка к прайсу</th><th>Условия оплаты</th></tr></thead>
+              <tbody>
+                <tr><td>до 5 тонн</td><td>базовая цена</td><td>предоплата 100%</td></tr>
+                <tr><td>5–20 тонн</td><td>−3%</td><td>предоплата 50% / отсрочка 7 дней</td></tr>
+                <tr><td>20–100 тонн</td><td>−6%</td><td>отсрочка 14 дней</td></tr>
+                <tr><td>от 100 тонн</td><td>индивидуально</td><td>отсрочка до 21 дня, годовой контракт</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="small muted" style="margin-top:12px">Цены действительны на дату публикации прайса и фиксируются в спецификации к договору поставки.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <a class="logo" href="index.html">
+          <span class="logo__mark"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M16 7h.01"/><path d="M3.4 18H12a8 8 0 0 0 8-8V7a4 4 0 0 0-7.28-2.3L2 20"/><path d="m20 7 2 .5-2 .5"/><path d="M10 18v3"/><path d="M14 17.75V21"/><path d="M7 18a6 6 0 0 0 3.84-10.61"/></svg></span>
+          <span><b>ПТИЦА</b><i>.ПРО</i></span>
+        </a>
+        <p class="footer__req">Оптовые поставки мяса птицы и куриного сырья по России и ЕАЭС.<br><br>ООО «Птица Про»<br>ИНН 7701234567 · КПП 770101001<br>ОГРН 1147746000000</p>
+      </div>
+      <div>
+        <h4>Продукция</h4>
+        <ul>
+          <li><a href="catalog.html?cat=tushka">Тушка ЦБ</a></li>
+          <li><a href="catalog.html?cat=razdelka">Разделка</a></li>
+          <li><a href="catalog.html?cat=file">Филе</a></li>
+          <li><a href="catalog.html?cat=subprod">Субпродукты</a></li>
+          <li><a href="catalog.html?cat=mmo">ММО и фарш</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Компания</h4>
+        <ul>
+          <li><a href="company.html">О производстве</a></li>
+          <li><a href="quality.html">Качество и сертификаты</a></li>
+          <li><a href="delivery.html">Доставка и оплата</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Отдел продаж</h4>
+        <ul>
+          <li><a href="tel:+74951234567">+7 (495) 123-45-67</a></li>
+          <li><a href="mailto:sales@ptica.pro">sales@ptica.pro</a></li>
+          <li>Пн–Пт 8:00–20:00, Сб 9:00–15:00</li>
+          <li>127015, Москва, ул. Складочная, 1, стр. 18</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© <span class="js-year">2026</span> ООО «Птица Про». Все права защищены.</span>
+      <span>Политика обработки персональных данных · Договор оферты</span>
+    </div>
+  </div>
+</footer>
+
+<div class="drawer-backdrop" id="drawerBackdrop"></div>
+<aside class="drawer" id="drawer" aria-label="Заявка">
+  <div class="drawer__head">
+    <h3>Ваша заявка</h3>
+    <button class="drawer__close" id="drawerClose" type="button" aria-label="Закрыть">×</button>
+  </div>
+  <div class="drawer__body" id="drawerBody"></div>
+  <div class="drawer__foot">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:14px">
+      <span class="small muted">Ориентировочная сумма</span>
+      <b id="drawerTotal" style="font-family:var(--font-display);font-size:19px">—</b>
+    </div>
+    <form data-form="request">
+      <div class="field"><input name="phone" type="tel" required placeholder="Телефон для связи"></div>
+      <button class="btn btn--primary btn--block" type="submit" data-label="Отправить заявку">Отправить заявку</button>
+      <div class="form-ok">Заявка отправлена. Менеджер пришлёт коммерческое предложение в течение часа.</div>
+    </form>
+    <button class="btn btn--ghost btn--block btn--sm" id="drawerClear" type="button" style="margin-top:10px">Очистить заявку</button>
+  </div>
+</aside>
+
+<div class="mobile-nav" id="mobileNav">
+  <div class="mobile-nav__head">
+    <span class="logo"><span class="logo__mark"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M16 7h.01"/><path d="M3.4 18H12a8 8 0 0 0 8-8V7a4 4 0 0 0-7.28-2.3L2 20"/><path d="m20 7 2 .5-2 .5"/><path d="M10 18v3"/><path d="M14 17.75V21"/><path d="M7 18a6 6 0 0 0 3.84-10.61"/></svg></span><span><b>ПТИЦА</b><i>.ПРО</i></span></span>
+    <button class="drawer__close" id="mobileClose" type="button" aria-label="Закрыть">×</button>
+  </div>
+  <a href="catalog.html">Продукция</a>
+  <a href="company.html">Компания</a>
+  <a href="quality.html">Качество</a>
+  <a href="delivery.html">Доставка и оплата</a>
+  <a href="contacts.html">Контакты</a>
+  <div class="mobile-nav__foot">
+    <a class="btn btn--primary btn--block" href="tel:+74951234567">+7 (495) 123-45-67</a>
+    <a class="btn btn--ghost btn--block" href="mailto:sales@ptica.pro">sales@ptica.pro</a>
+  </div>
+</div>
+
+<script src="assets/js/app.js"></script>
+</body>
+</html>
